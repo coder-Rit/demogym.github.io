@@ -1,0 +1,581 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+        <!-- ///////////////////////////////font osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <script src="https://use.fontawesome.com/7a48dd6cf0.js"></script> 
+
+
+        <!-- ///////////////////////////////animate\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
+
+    <!-- ///////////////////////////////jquery\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- ///////////////////////////////crousel\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <!-- ///////////////////////////////icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ --> 
+    <link rel="icon" href="./imges/14.06.2021_12.39.07_REC.png">
+    
+    <title>DEMO GYM</title>
+    <style>
+        
+       
+    </style>
+</head>
+
+<body>
+
+    <section class="DivHomeImg">
+        <div class="DivHome">
+            <nav>
+
+                <img class="log" src="./imges/14.06.2021_12.39.07_REC.png" alt="">
+                <ul class="maxul" id="minul">
+                    <i class="fa fa-times" id="cross" aria-hidden="true"></i>
+                    <a href="index.php">Home</a>
+                    <a href="Imagegallery.html">Gallry</a>
+                    <a href= "#classes" >Classe</a>
+                    <a href= "#traning">Training</a>
+                    <a href= "#About">About</a>
+                    <a href= "#map">Location</a>
+                    <a href= "#Conatact">Contact</a>
+
+                </ul>
+                <a class="menu" id="menu">Menu</a>
+                <div class="i">
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="50"
+                    data-aos-duration="70"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="100"
+                    data-aos-duration="70"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="150"
+                    data-aos-duration="70"> <i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i> </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="200"
+                    data-aos-duration="70"> <i class="fa fa-google-plus-square"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="250"
+                    data-aos-duration="70"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+
+                </div>
+
+            </nav>
+            <div class="HomeMainTExt">
+                <h6 class="mainHeading">Well done is better <span class="orengSpan">than</span><span class="orengSpan">
+                        well</span><span class="orengSpan"> said</span> </h6>
+                <p class="mainPar">Regular physical activity can improve your muscle strength and boost your endurance.
+                    Exercise
+                    delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more
+                    efficiently. And when your heart and lung health improve, you have more energy to tackle daily
+                    chores.</p>
+                <div class="MainBtns" data-aos="zoom-in-up" data-aos-delay="50"
+                data-aos-duration="600"data-aos-offset="50">
+                    <a class="MainBtn1 ">Book Class</a>
+                    <a class="MainBtn2 ">Hire Coach</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="classes" id="classes">
+        <div>
+            <h1 class="classHeading"data-aos="fade-right"data-aos-delay="50"
+            data-aos-duration="700">JOIN CLASSES</h1>
+        </div>
+        <div class="ClsTime">
+            <div id="shedule" class="TimeDiv1">
+            </div>
+            <div class="TimeDiv2">
+                <h2>Timing For Zomba And Yoga</h2>
+                <h4 class="botumborder">7 AM - 12:30 PM</h4>
+                <hr>
+                <h2>Timing For GYM And sports</h2>
+                <h4>3:30 PM - 6:30 PM</h4>
+            </div>
+        </div>
+
+        <div class="mainClasses">
+
+            <div class="class rotatCart" data-aos="fade-up"
+            data-aos-duration="250"data-aos-delay="50">
+
+                <div class="frontFace bgImg1">
+                    <h1 class="zumba">Zumba</h1>
+                    <a  href="">Read More</a>
+                </div>
+
+                <div class="backofCart">
+                    <h1>Zumba</h1>
+                    <p>"<span>Z</span>umba targets lots of different muscle groups at once for total body toning. Boosts
+                        your heart health. You not only get aerobic benefits (it really gets your heart rate up), you
+                        also get anaerobic benefits – the kind that help you maintain a good cardiovascular respiratory
+                        system. Helps you de-stress."</p>
+                    <a href="">₹500/Month</a>
+                </div>
+
+            </div>
+            <div class="class rotatCart"data-aos="fade-up"
+            data-aos-duration="250"data-aos-delay="200">
+                <div class="frontFace bgImg2">
+                    <h1 class="zumba">Workout</h1>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="backofCart">
+                    <h1>Workout</h1>
+                    <p>"<span>P</span>re-workout powders (which are intended to be mixed with water) contain ingredients
+                        like amino acids, B vitamins, caffeine, and creatine, and claim to boost performance.iStock;
+                        Canva
+                        Health experts are warning against trying a viral new TikTok trend that has reportedly sent one
+                        woman to the hospital and caused another woman to stop breathing."</p>
+                    <a href="">₹500/Month</a>
+                </div>
+
+            </div>
+            <div class="class rotatCart" data-aos="fade-up"
+            data-aos-duration="250"data-aos-delay="400">
+                <div class="frontFace bgImg3">
+                    <h1 class="zumba">Yoga</h1>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="backofCart" >
+                    <h1>Yoga</h1>
+                    <p>"<span>T</span>he objective of this study is to assess the findings of selected articles
+                        regarding the therapeutic effects of yoga and to provide a comprehensive review of the benefits
+                        of regular yoga practice. As participation rates in mind-body fitness programs such as yoga
+                        continue to increase, it is important for health care professionals to be informed about the
+                        nature of yoga and the evidence of its many therapeutic effects."</p>
+                    <a href="">₹500/Month</a>
+                </div>
+
+            </div>
+            <div class="class rotatCart"data-aos="fade-up"
+            data-aos-duration="250"data-aos-delay="600">
+
+                <div class="frontFace bgImg4">
+                    <h1 class="zumba">Sports</h1>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="backofCart">
+                    <h1>Sports</h1>
+                    <p>"<span>W</span>e Are Grown Men Playing a Child's Game
+                        by Gilbert Rogin
+                        The bearded man laughing at his daughter is Bill Russell, the most remarkable basketball player
+                        of our time. Sport, however, is one of his lesser interests. Here are his trenchant, often angry
+                        observations on today's Negro-white crisis and his role in it."</p>
+                    <a href="">₹500/Month</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="traning" id="traning">
+
+        <h1 class="traning_heading"> <span class="heading_sapn1"data-aos="fade-right"data-aos-delay="50"
+            data-aos-duration="700">GET TRAINING</span> <br> with <span
+                class="heading_sapn2" >Professional Trainers</span></h1>
+
+        <img class="svgImage" src="./imges/1975689.svg" alt="">
+
+
+        <div class="responsive slides"data-aos="fade-up"
+        data-aos-duration="600"data-aos-delay="50">
+
+            <div class="indiTRaining" >
+                <span class="trainingBackground traninBG1">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1" >
+                        <h1>cardiovascular training </h1>
+                        <h3>
+                            <li>A minimum of 20 minutes sub-maximal work.</li>
+                            <li>Target heart rate range between 60% - 80% maximum heart rate (maxHR).</li>
+                            <li>Swimming, running, cycling, walking or a combination of these disciplines.</li>
+                            <li>Disadvantage - some participants find longer sessions to be boring.</li>
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof1.png" alt="">
+                        <h1>James Noah </h1>
+                        <h3>Shedule | 7:30 to 9</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="indiTRaining">
+                <span class="trainingBackground traninBG2">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1">
+                        <h1>Fartlek training</h1>
+                        <h3>
+                            <li>A continuous form of training.</li>
+                            <li>Changes in speed, incline and terrain are used to provide changes</li>
+                            <li>Aerobic and anaerobic work can be done in the quantities that suit the performer.</li>
+                            <li>Disadvantage - some urban areas have little variety of incline and terrain.</li>
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof2.png" alt="">
+                        <h1>John Liam </h1>
+                        <h3>Shedule | 9 to 11</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="indiTRaining">
+                <span class="trainingBackground traninBG3">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1">
+                        <h1>Weight training</h1>
+                        <h3>
+                            <li>An interval form of training.</li>
+                            <li>Time is structured in reps and sets with specific timings for recovery between sets.
+                            </li>
+                            <li>Huge range of possible lifts combining machines, free weights .</li>
+
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof3.png" alt="">
+                        <h1>Robert Mason </h1>
+                        <h3>Shedule | 6 to 7</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="indiTRaining">
+                <span class="trainingBackground traninBG4">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1">
+                        <h1>Plyometric training</h1>
+                        <h3>
+                            <li>High intensity exercise involving explosive movements.</li>
+                            <li>Suitable for well-trained athletes.</li>
+                            <li>Very effective for developing power.</li>
+                            <li>Disadvantage - can cause injury if athlete is not in excellent condition.</li>
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof4.png" alt="">
+                        <h1>Michael Jacob </h1>
+                        <h3>Shedule | 7:30 to 9</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="indiTRaining">
+                <span class="trainingBackground traninBG5">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1">
+                        <h1>Flexibility training</h1>
+                        <h3>
+                            <li>Essential training for all athletes in all sports and activities.</li>
+                            <li>Time is measured by the length of hold and the recovery period between holds.</li>
+                            <li>Intensity is measured as a percentage of range of motion (%ROM).</li>
+                            <li>Disadvantage - underused by many athletes.</li>
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof5.png" alt="">
+                        <h1>David Ethan </h1>
+                        <h3>Shedule | 3:30 to 6</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="indiTRaining">
+                <span class="trainingBackground traninBG6">
+                </span>
+                <div class="traners_div">
+                    <div class="trainerDiv1">
+                        <h1>Circuit training</h1>
+                        <h3>
+                            <li>This develops muscular endurance, strength and/or cardiovascular fitness.</li>
+                            <li>An interval form of training.</li>
+                            <li>Stations are set out that train one or more components of fitness.</li>
+
+                        </h3>
+                        <div>
+                            <span>
+                                <a href="">Read More</a>
+                                <a href="">Contact Now</a>
+                            </span>
+                            <a class="money" href="">₹500/Month</a>
+                        </div>
+                    </div>
+                    <div class="trainerDiv2">
+                        <img src="./imges/prof6.png" alt="">
+                        <h1>Thomas Daniel </h1>
+                        <h3>Shedule | 9 to 11</h3>
+
+                    </div>
+                </div>
+            </div>
+
+       </div>
+
+
+    </section>
+
+    <section class="About" id="About">
+        <div>
+            <h1 class="AboutHeading"data-aos="fade-right"data-aos-delay="50"
+            data-aos-duration="700">ABOUT US</h1>
+        </div>
+        <div class="AboutMain">
+            <div class="AboutImges">
+                <div class="AboutImg AboutImg1">
+
+                    <div class="about_Trainer about_Trainer1" id="about_Trainer">
+                    </div>
+                    <div class="btnBox">
+                        <i class="fa fa-info" data-aos="zoom-in"  data-aos-delay="50"
+                        data-aos-duration="300"
+                        data-aos-easing="ease-in-out" id="showContent1" aria-hidden="true"></i>
+
+                    </div>
+
+                </div>
+                <div class="AboutImg AboutImg2">
+                    <div class="about_Trainer about_Trainer2" id="about_Trainer">
+                    </div>
+                    <div class="btnBox">
+                        <i class="fa fa-info" data-aos="zoom-in"  data-aos-delay="100"
+                        data-aos-duration="300"
+                        data-aos-easing="ease-in-out" id="showContent2" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+                <div class="AboutImg AboutImg3">
+                    <div class="about_Trainer about_Trainer3" id="about_Trainer">
+                    </div>
+                    <div class="btnBox">
+                        <i class="fa fa-info" data-aos="zoom-in"  data-aos-delay="150"
+                        data-aos-duration="300"data-aos-offset="50"
+                        data-aos-easing="ease-in-out" id="showContent3" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ourStories">
+                <h1 data-aos="flip-up"data-aos-delay="50"
+                data-aos-duration="500" >Our Story</h1>
+                <p data-aos="zoom-in"data-aos-delay="200"
+                data-aos-duration="500">The story is about three brothers who, travelling together, reach a treacherous river. They make a
+                    magical bridge over the river. Halfway across the bridge, they meet the personification of Death who
+                    is angry for losing three potential victims. He pretends to be impressed by them and grants each a
+                    wish as a reward. The eldest brother asks for an unbeatable dueling wand, so Death gives him the
+                    Elder Wand. The middle brother asks for the ability to resurrect the dead, so Death gives him the
+                    Resurrection Stone. The youngest brother doesn't trust Death and asks for a way to stop Death from
+                    following him, so Death reluctantly gives him his Cloak of Invisibility. Afterwards, the brothers go
+                    their separate ways.
+                </p>
+                <p data-aos="zoom-in"data-aos-delay="400"
+                data-aos-duration="500">The eldest brother, bragging about his powerful wand, is robbed of it and murdered while he is
+                    asleep. The middle brother uses his ability to bring back the woman he loved, who died before he
+                    could marry her. However, she is not fully alive and is full of sorrow. He kills himself to join
+                    her. As for the youngest brother, Death never manages to find him, as he stays hidden under his
+                    Cloak. Many years later, the brother removes his cloak and gives it to his son. Pleased with his
+                    achievements, he greets Death as an old friend and chooses to leave with him as equals. </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="map" id="map">
+        <div>
+            <h1 class="AboutHeading"data-aos="fade-right"data-aos-delay="50"
+            data-aos-duration="700">LOCATION</h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.9865608323404!2d74.83524484501972!3d21.016198760061116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAwJzU4LjIiTiA3NMKwNTAnMDkuMyJF!5e1!3m2!1sen!2sin!4v1624729847799!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="Conatact">
+
+        <div class="headingDiv" id="Conatact">
+            <h1 class="AboutHeading" data-aos="fade-right"data-aos-delay="50"
+            data-aos-duration="700">CONTACT US</h1>
+        </div> 
+        <div class="contactDiv">
+            <div class="contactImg">
+                <img data-aos="fade-up-right" data-aos-delay="150"
+                data-aos-duration="1000" src="./imges/krakenimages-4l8UH4G2_Dg-unsplash.png" alt="">
+            </div>
+            <form data-aos="fade-down" data-aos-delay="50"
+            data-aos-duration="700" class="InputDiv" id="InputDiv" method="post" action="contactFormHandeler.php">
+                <div id="name" class="anima">
+                    <h4 >Name</h4>
+                    <input name="name" autocomplete="off" type="text" placeholder="Enter Your Name" >
+                </div>
+                <div id="location" class="anima"> 
+                    <h4>Location</h4>
+                    <input name="location" autocomplete="off" type="text" placeholder="Enter Your location" >
+                </div>
+                <div id="contactNo" class="anima"> 
+                    <h4>Contact No.</h4>
+                    <input name="contact" autocomplete="off" type="number" placeholder="Enter your contact no" >
+                </div>
+                <div id="email" class="anima">
+                    <h4>Email</h4>
+                    <input name="email" autocomplete="off" type="email" placeholder="Enter Your Email"  >
+                </div>
+                <span class="redio anima" id="radio">
+                    <span>
+                        <input type="radio" name="femail" value="Female">
+                        <label>Female</label>
+                    </span>
+                    <span>
+                        <input type="radio">
+                        <label>Male</label>
+                    </span>
+                    <span>
+                        <input type="radio">
+                        <label>Other</label>
+                    </span> 
+                </span>
+                <span class="SubmitDiv" >
+                    <button type="submit"   class="submit" name="submit">Submit</button>
+                </span>
+
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="footerDivs">
+             
+            <div class="footerDiv">
+                <a  href="">Home</a>
+                <a  href="">Gallery</a>
+                <a  href="">Classes</a>
+                <div> 
+                    <a href="">zomba</a>
+                    <a href="">workout</a>
+                    <a href="">yoga</a>
+                    <a href="">sports</a>
+                </div>
+              
+            </div>
+            <div class="footerDiv"> 
+                <a  href="">Training </a>
+                <div>
+                    <a href="">cardiovascular training</a>
+                    <a href="">Fartlek training</a>
+                    <a href="">Weight training</a>
+                    <a href="">Plyometric training</a>
+                    <a href="">Flexibility training</a>
+                    <a href="">Circuit training</a>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <a  href="">Location</a>
+                <div>
+                    <a>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit <br> Laborum quam minima non. </a>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <a  href="">About</a>
+                <div>
+                    <a href="">-Charlie Smith</a>
+                    <a href="">-Jacob Jones</a>
+                    <a href="">-Henry Taylor</a>
+                </div>
+            </div>
+            <div class="footerDiv footerDivLast" data-aos="fade-up" data-aos-delay="50"
+            data-aos-duration="700">
+                <img class="logo" src="./imges/14.06.2021_12.39.07_REC.png" alt="">
+
+                <a  href="">Our social media handes</a>
+                <div class="iLast">
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"> <i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i> </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"> <i class="fa fa-google-plus-square"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a> 
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </section>
+
+
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

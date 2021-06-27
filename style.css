@@ -1,0 +1,1374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&display=swap');
+/* //////////////////////////////////////////////////home section ///////////////////////////////////// */
+
+ 
+
+body{
+   
+   background-color: rgba(0, 0, 0, 0.068);
+   max-width: 1400px ; 
+   overflow-x: hidden;
+}
+html{
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none; 
+}
+ 
+ 
+::-moz-selection { /* Code for Firefox */  
+    background: #eb160380;
+  }
+  
+  ::selection { 
+    background: #eb160380;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #eb16034f;
+    border-radius: 20px;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #eb1603dc;
+    border-radius: 20px;
+  }
+
+.DivHomeImg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./imges/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-his-upper-body-concept-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing (1).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.imgGal{
+    background-image: url("./imges/young-healthy-man-athlete-posing-confident-with-ropes-gym.jpg");
+
+}
+
+.DivHome {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(2px); 
+
+}
+ 
+
+.DivHome nav {
+    display: flex; 
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 60px; 
+    max-width: 1400px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+nav img {
+    
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+
+
+}
+
+nav ul {
+    display: flex;
+    color: rgb(184, 184, 184);
+    gap: 15px; 
+    transition: all 0.3s;
+    cursor: pointer;
+     
+
+}
+
+nav ul a {
+    cursor: pointer;
+    color: rgb(189, 189, 189);
+    transition: 0.2s;
+    text-decoration: none; 
+}
+
+nav ul a:hover {
+    color: white; 
+     transform:scale(1.1,1.1)
+
+}
+
+nav .i {
+    display: flex; 
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 30px;
+     
+}
+
+.i a {
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    text-decoration: none; 
+}
+
+.i a:hover {
+    transform: scale(1.07,1.07);
+    color: orangered;
+}
+ 
+.HomeMainTExt .MainBtns{
+   font-size: 1.5rem;
+}
+.HomeMainTExt .mainHeading{
+   font-size: 6.4rem;
+}
+.orengSpan{ 
+    text-shadow: none;
+    -webkit-text-stroke: 1.5px rgb(235, 22, 3); /* width and color */ 
+   color: transparent; 
+    transition: 0.2s;
+}
+.orengSpan:hover{
+    color: rgb(235, 22, 3);
+      
+}
+ 
+
+@media screen and (min-width:950px) {
+    .minul ,#cross ,.menu{
+       display: none;
+    }
+    
+
+}
+@media screen and (max-width:1125px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:950px) { 
+    html{
+        font-size: 40%;
+    }
+
+    nav .maxul { 
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: -300px;
+        border: none;
+        flex-wrap: wrap;
+        background-color: rgba(2, 2, 2, 0.712);
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        padding: 15px 30px; 
+
+    }
+    
+    nav .menu  {
+       color: white; 
+       position: absolute;
+       left: 20px;
+       background-color: orangered;
+       padding: 7px ;
+       border-radius:30px;
+
+
+    }
+    
+    nav img {
+        
+         left: 50%;
+        transform: translateX(-50%); 
+
+    }
+
+    .i { 
+        right: 20px; 
+        top: 20px; 
+    } 
+
+    
+
+
+}
+
+ 
+
+nav .fa {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0px 7px;
+    padding-bottom: 30px;
+    transition: all 0.3s;
+    position: relative;
+    top: 15px;
+
+}
+
+nav .fa:hover {
+    font-size: 50px;
+    bottom: 20px;
+    color: rgb(255, 21, 0);
+
+}
+
+.HomeMainTExt {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+    position: absolute;
+    top: 36vh;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.HomeMainTExt h6 {
+    
+    text-transform: capitalize;
+    text-shadow: 5px 5px 3px rgb(17, 17, 17);
+    text-align: center;
+
+
+}
+
+.HomeMainTExt p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    width: 80%;
+  
+
+}
+
+.HomeMainTExt div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.HomeMainTExt a  {
+    padding: 7px 12px;
+    border: 2px solid rgb(235, 22, 3);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.6);
+    cursor: pointer; 
+     
+}
+
+.HomeMainTExt .MainBtn1:hover {
+    background-color: rgb(235, 22, 3);
+
+}
+
+.HomeMainTExt .MainBtn2 {
+    background-color: rgb(235, 22, 3);
+}
+
+.HomeMainTExt .MainBtn2:hover {
+    background: transparent;
+}
+
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 34%;
+    }
+
+    .HomeMainTExt p { 
+        width: 95%;  
+    }
+    
+    .HomeMainTExt div { 
+        gap: 10px; 
+    }
+    .i { 
+       flex-direction: column;
+       padding: 0; 
+      top: -30px;
+    }
+    .i a{ 
+         height: 25px;
+    }
+
+    
+
+}
+ 
+ 
+
+
+
+
+/* //////////////////////////////////////classes section///////////////////////////////////// */
+
+
+.classes {
+    width: 100vw; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px ;
+    margin-bottom: 100px;
+}
+.classHeading,.traning_heading .heading_sapn1 ,.AboutHeading{ 
+    font-size: 4.6rem;
+    text-align: left;
+    margin: 0 3%;
+    display: inline-block;
+    color: rgba(235, 22, 3, 0.493);
+    border-top: 5px solid rgb(235, 22, 3);
+    box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 5px 23px -5px rgba(0,0,0,0.75) inset;
+
+}
+
+.ClsTime {
+    display: grid;
+    grid-template-columns: 150px auto;
+    margin: 0 3%;
+    height: auto;
+    text-align: center;
+    background-image: url(./imges/dollar-gill-PRGbPWm4ylo-unsplash-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: 5px solid rgb(235, 22, 3);
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);  
+}
+
+.TimeDiv1 {
+    padding: 20px 0px;
+    background-color: rgba(255, 60, 0, 0.815);
+    position: relative;
+    font-size: 2rem;
+
+}
+
+.ClsTime .Time2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.TimeDiv2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1px auto auto;
+    text-align: center; 
+}
+.TimeDiv2 h2{
+font-size: 2.4rem;
+}
+.TimeDiv2 h4{
+font-size: 1.3rem;
+}
+.TimeDiv2 hr{
+     background-color: rgb(0, 0, 0);
+     
+}
+
+
+
+ 
+.mainClasses {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     
+     
+
+}
+ 
+.class ,.frontFace ,.backofCart  {
+    width: 300px;
+    height: 450px; 
+    border-radius: 5px;
+}
+ 
+
+.class .frontFace { 
+    position: absolute;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(0deg);
+    transition: all .5s;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    z-index: 1;
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+
+  
+    
+}
+
+.bgImg1{
+    background-image: url(./imges/gogreous-fit-woman-doing-zumba1.jpg) ;   
+}
+.bgImg2{
+    background-image: url(./imges/aaron-brogden-9y4MaTz2Js0-unsplash-min.jpg) ;
+}
+.bgImg3{
+    background-image: url(./imges/wepik-2021517-02638-min.png);
+}
+.bgImg4{
+    background-image: url(./imges/damir-spanic-iyNn1sJvKys-unsplash-min.jpg);
+}
+
+.class  .frontFace h1 {
+    position: absolute;
+    color: rgb(119, 119, 119); 
+    text-transform: uppercase;
+    font-size: 2.5rem; 
+    border: 1px solid rgb(255, 0, 0);
+    border-left: 10px solid rgb(235, 22, 3);
+    align-self: baseline;
+    top: 10px;
+    left: 20px;
+     
+}
+.class .frontFace a   {
+    padding: 7px 17px; 
+    background-color: rgb(235, 22, 3);
+    border-radius: 20px;
+    position: absolute; 
+    color: white;     
+    bottom: 10px;
+    left: 100px;  
+    font-size: 1.3rem;
+    text-decoration: none; 
+} 
+
+
+.backofCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(90, 90, 90);  
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.055); 
+    backface-visibility: hidden;
+    transform: perspective(600px)  rotateY(180deg);
+    overflow: hidden;  
+    transition: all .5s;  
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+}
+.backofCart h1 {
+    color: rgba(255, 68, 0, 0.383);
+    transform: scale(2, 2);
+    position: relative;
+    top: 10px; 
+}
+.backofCart p {
+    font-size: 13px;
+    padding: 0px 20px;
+    text-align: center;
+}
+ 
+.backofCart p span {
+    font-size: 25px; 
+}
+
+.backofCart a ,.trainerDiv1 a ,.About  .AboutImg a{
+    padding: 7px 12px; 
+    background-color: rgb(235, 22, 3);
+    border-radius: 20px;
+    position: relative;
+    bottom: 10px; 
+    color: white; 
+    font-size: 1.3rem;
+    text-decoration: none; 
+
+}
+.rotatCart:hover > .frontFace{
+    transform: perspective(500px) rotateY(-180deg);
+}
+.rotatCart:hover > .backofCart{
+    transform: perspective(500px) rotateY(0deg);
+   
+}
+@media screen and (max-width : 500px) {
+    .ClsTime { 
+        grid-template-columns: 80px auto; 
+    }
+}
+
+
+/* ////////////////////////////////////////////Trainig section //////////////////////////////// */
+
+.traning {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.slides {
+    width: 100vw;
+    height: auto;
+    display: flex;
+
+
+}
+
+
+.indiTRaining {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.9, 0.9);
+    display: grid;
+    grid-template-rows: 300px 300px;
+    border-radius: 5px;
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+
+
+}
+
+.indiTRaining .trainingBackground {
+    display: flex;
+    height: 300px;
+    background: center center no-repeat;
+    background-size: cover;
+    opacity: .9;
+    border-bottom: 6px solid rgb(235, 22, 3);
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.indiTRaining .traninBG1 {
+    background-image: url(./imges/alora-griffiths-WX7FSaiYxK8-unsplash.jpg);
+}
+
+.indiTRaining .traninBG2 {
+    background-image: url(./imges/jonathan-borba-R0y_bEUjiOM-unsplash.jpg);
+}
+
+.indiTRaining .traninBG3 {
+    background-image: url(./imges/alora-griffiths-LOnMc8Rp1Qs-unsplash-min.jpg);
+}
+
+.indiTRaining .traninBG4 {
+    background-image: url(./imges/mr-lee-f4RBYsY2hxA-unsplash.jpg);
+}
+
+.indiTRaining .traninBG5 {
+    background-image: url(./imges/wesley-tingey--nZynZmR3Ls-unsplash.jpg);
+}
+
+.indiTRaining .traninBG6 {
+    background-image: url(./imges/bruce-mars-gJtDg6WfMlQ-unsplash-min.jpg);
+}
+
+.traners_div {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    height: 300px; 
+}
+
+
+
+.indiTRaining .trainerDiv1 {
+
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 0 0 5px ;
+
+}
+
+
+
+.indiTRaining .trainerDiv1 h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.indiTRaining .trainerDiv1 h3 {
+    font-size: 15px;
+    margin: 0 2%;
+    position: relative;
+    bottom: 20px;
+}
+
+.indiTRaining .trainerDiv1 a {
+    position: relative;
+    bottom: 10px;
+    font-size: 150%;
+    box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
+    text-decoration: none; 
+
+}
+
+.indiTRaining .trainerDiv2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(177, 177, 177);
+    border-radius: 0 0 5px 0;
+}
+
+.indiTRaining .trainerDiv2 img {
+    width: 75px;
+    height: 75px;
+    border: 3px solid rgb(235, 22, 3);
+    border-radius: 50%;
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    
+}
+
+@media screen and (max-width:1210px) {
+    .indiTRaining .trainerDiv1 a {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width:1075px) {
+    .indiTRaining .trainerDiv1 h1 {
+        font-size: 20px;
+    }
+
+    .indiTRaining .trainerDiv1 h3 {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:873px) {
+    .indiTRaining .trainerDiv1 a {
+        font-size: 1.8rem;
+    }
+
+    .indiTRaining .trainerDiv1 h1 {
+        font-size: 4rem;
+    }
+
+    .indiTRaining .trainerDiv1 h3 {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:505px) and (min-width:477px) {
+    .indiTRaining .trainerDiv1 a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .indiTRaining .trainerDiv1 h3 {
+        font-size: 2.5rem;
+    }
+    .trainerDiv1 a{
+        padding: 3px 4px;
+         
+    }
+
+}
+
+@media screen and (max-width:379px) {
+    .indiTRaining .trainerDiv1 a {
+        font-size: 1.2rem;
+    }
+
+}
+.svgImage{
+    width: 100vw;
+    height: 900px;
+     position: absolute;
+     opacity: 0.5;
+     transform: translateY(-50px);
+}
+.traning_heading{
+    font-size: 5rem;
+    text-align: left;
+    margin: 0 3%;
+}
+ 
+.traning_heading .heading_sapn2{
+    color: rgb(235, 22, 3);
+}
+@media screen and (max-width:528px){
+    .indiTRaining {
+        height: 700px; 
+    }
+    
+.traners_div { 
+    height: 400px; 
+}
+}
+
+ 
+
+/* ///////////////////////////////////////// Videos section////////////////////////////////////////////////////// */
+
+.VideoDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.diiv2,
+.diiv {
+    -webkit-clip-path: polygon(100% 35%, 100% 0, 0 0, 0 80%);
+    clip-path: polygon(100% 35%, 100% 0, 0 0, 0 80%);
+    position: relative;
+    width: 100%;
+    opacity: 1; 
+}
+
+.videos {
+     
+    width: 100vw;
+    background: rgb(246, 30, 2);
+    color: rgb(163, 163, 163);
+    position: relative;
+    transform: translateY(-22vw);
+    
+
+
+}
+
+.diiv {
+    width: 100%;
+    box-shadow: 0px -4px 13px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px -4px 13px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -4px 13px 2px rgba(0, 0, 0, 0.75);
+}
+
+.diiv2 {
+    -webkit-clip-path: polygon(100% 100%, 100% 20%, 0% 65%, 0 100%);
+    clip-path: polygon(100% 100%, 100% 20%, 0% 65%, 0 100%);
+    bottom: 47.2vw; 
+
+}
+
+.motiv {
+    position: relative;
+    z-index: 3;
+    text-transform: uppercase;
+    width: 100vw;
+    font-weight: 900;
+}
+
+.motiv h1 {
+    font-size: 3vw;
+    display: inline-block;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.motiv h4 {
+    font-size: 1.8vw;
+    text-transform: lowercase;
+    color: rgb(245, 24, 4);
+    display: inline-block;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.motiv1 {
+    bottom: 105vw;
+    left: 30px;
+    width: 80vw;
+
+}
+
+.motiv2 {
+    text-align: right;
+    bottom: 78vw;
+    right: 30px;
+}
+
+.only300 {
+    display: none;
+}
+
+@media screen and (max-width:870px) {
+    .only800 {
+        display: flex;
+        width: 100vw;
+        height: 64vw;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .only300 {
+        display: flex;
+    }
+
+    .motiv h1 {
+        font-size: 3.8vw;
+    }
+
+    .motiv h4 {
+        font-size: 2.3vw;
+        text-transform: lowercase;
+        color: rgb(245, 24, 4);
+        display: inline-block;
+
+    }
+
+    .motiv1 {
+        bottom: 105vw;
+        left: 30px;
+        width: 80vw;
+
+    }
+
+    .motiv2 {
+        text-align: right;
+        bottom: 95vw;
+        right: 30px;
+    }
+}
+
+
+/* //////////////////////////////////////////trainer section///////////////////////////// */
+
+.About {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+    gap: 30px;
+    margin: 80px 0;
+    border-radius: 5px;
+    
+
+
+}
+
+.AboutMain {
+    display: flex;
+    background-color: #eb160391;
+    border-radius: 5px;
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1); 
+}
+
+.AboutImges {
+    width: 30%;
+    height: 700px;
+    
+}
+  
+.ourStories{
+    width: 70%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 50px;
+    color: rgb(226, 226, 226);
+}
+.ourStories h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 10rem;
+}
+.ourStories p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin:0 5%;
+}
+
+.About .AboutImg {
+    width: 100%;
+    height: 33.33%;
+    background: center center no-repeat;
+    background-size: cover;
+
+
+}
+
+.About .AboutImg1 {
+    background-image: url(./imges/smalltraner1.png);
+    border-radius: 5px 0 0 0;
+}
+
+.About .AboutImg2 {
+    background-image: url(./imges/smalltraner2.png);
+}
+
+.About .AboutImg3 {
+    background-image: url(./imges/smalltrainer3.png);
+    border-radius: 0 0 0 5px;
+}
+
+.About .btnBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.About .btnBox .fa-info  {
+    font-size: 35px;
+    color: black;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.2s;
+
+}
+
+.About .btnBox .fa-info:hover {
+    color: rgb(250, 22, 1);
+    transform: translateY(-10px);
+}
+
+
+/*hided css */
+.About .about_Trainer {
+    width: 0;
+    height: 0;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.424);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    overflow: hidden; 
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+-moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1); 
+
+    /* background-color: rgb(46, 46, 46);   */
+}
+
+#hideContent {
+    position: absolute;
+    top: 10px ;
+    left: 10px;
+    font-size: 30px; 
+    color: rgb(250, 22, 1); 
+    
+} 
+
+.About .trainerImg {
+    width: 40%;
+    height: 100%;
+    background: center center no-repeat;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+    
+   
+
+}
+
+.About .trainerImg1 {
+    background-image: url(./imges/bigtrainer1.png);
+}
+
+.About .trainerImg2 {
+    background-image: url(./imges/bigtrainer2.png);
+}
+
+.About .trainerImg3 {
+    background-image: url(./imges/bigttrainer3.jpg);
+}
+
+.About .trainerContent {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 50px;
+    color: rgb(32, 32, 32);
+}
+.trainerContent h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    
+    margin:0 5%;
+}
+.trainerContent p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin:0 5%;
+    
+}
+
+@media screen and (max-width:700px) {
+
+    .AboutMain {
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+
+    }
+
+    .AboutImges {
+        display: flex;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .AboutImg {
+        width: 33.33%;
+        display: flex;
+    }
+
+    .About .AboutImg {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    
+.ourStories{
+    width: 100%;
+    height: 60%;
+    
+}
+}
+ 
+/* ////////////////////////////////////map section//////////////////////////////////////// */
+
+.map{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 30px;
+    padding: 0 3%;
+    
+}
+.map iframe{
+    width: 100%;
+    height: 650px;
+    box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1); 
+    border-radius: 5px; 
+    
+   }
+   .map div{
+     width: 93vw; 
+   } 
+   /* ///////////////////////////////////contact section/////////////////////////////////// */
+
+   .Conatact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    flex-direction: column;
+    margin: 100px 0;
+    gap: 30px;
+
+
+}
+
+.contactDiv {
+    width: 80vw;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 450px auto;
+    box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    max-width: 1300px;
+    background-color: #eb160362;
+}
+
+.contactImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.contactImg img {
+    width: 1000px;
+    height: 650px; 
+    position: relative;
+    z-index: 1;
+    
+}
+
+.Conatact .headingDiv {
+    width: 95vw;
+}
+
+.Conatact .InputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; 
+    position: relative;
+    transition: all 1s ease-in-out; 
+}
+.anima{ 
+    transition: all 1s ease-in-out; 
+     position: relative;
+}
+ 
+
+
+@keyframes fordiv{
+0%{
+    transform: translateX(0px);
+}
+50%{
+    transform: translateX(150px);  
+}
+100%{
+    transform: translateX(0px);
+    
+}
+}
+
+.Conatact .InputDiv div input {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 40vw;
+    text-align: center;
+    color: rgb(235, 22, 3);
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+}
+
+.Conatact .InputDiv span {
+    width: 40vw;
+    margin: 0 15px; 
+}
+
+.Conatact .InputDiv h4,
+.Conatact .InputDiv label {
+    font-size: 2rem; 
+}
+
+.Conatact .submit {
+    font-size: 2rem;
+    padding: 7px 10px;
+    background-color: rgb(235, 22, 3);
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+.Conatact .SubmitDiv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (max-width:1202px) {
+    .contactDiv {
+        width: 90vw;
+        height: 550px;
+        grid-template-columns: 350px auto;
+    }
+
+    .contactImg img {
+        width: 900px;
+    height: 650px;
+    
+    }
+
+    .Conatact {
+        height: 450px;
+
+    }
+
+}
+
+@media screen and (max-width:760px) {
+    .contactDiv {
+        height: 450px;
+        grid-template-columns: 250px auto;
+    }
+
+    .contactImg img {
+        width: 700px;
+    height: 500px;
+    }
+
+}
+
+@media screen and (max-width:559px) {
+    .contactDiv {
+        height: 400px;
+        grid-template-columns: 150px auto;
+    }
+
+    .contactImg img {
+        width: 500px;
+    height: 350px;
+    }
+
+    .Conatact .InputDiv {
+        gap: 10px;
+    }
+
+    .Conatact .InputDiv div input {
+        height: 20px;
+        width: 40vw;
+        text-align: center;
+        color: orangered;
+    }
+
+    .Conatact .InputDiv .redio span {
+        display: inline-block;
+
+    }
+
+    .Conatact {
+        height: 300px;
+    }
+}
+
+
+/* ////////////////////////////////////////////footer///////////////////////////////////// */
+
+
+.footer {
+    background-color: rgb(1, 0, 24);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+-webkit-box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+-moz-box-shadow: 1px -1px 31px -13px rgba(0, 0, 0, 1);
+ }
+.footerForGallye{
+    transform: translateY(-22vw);
+
+}
+
+.footer .footerDivs {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 100px 3%;
+    row-gap: 20px;
+}
+
+.footer .footerDiv {
+     
+    width: 300px;
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    
+}
+
+.footer .footerDiv div{
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    text-align: center;
+    
+ 
+}
+.footer .footerDiv a{
+    font-size: 1.5rem;
+  color: rgb(218, 218, 218);
+   
+}
+.footer .footerDiv div a{
+    font-size: 1.35rem;
+  color: rgb(182, 182, 182); 
+}
+.footer .logo{
+   width: 75px;
+   height: 75px; 
+}
+ 
+.footer .iLast{
+    display: flex;
+     transform: rotateZ(90deg);
+}
+.footer .iLast i{
+   
+    transform: rotateZ(-90deg);
+}
+
+@media screen and (max-width:657px) {
+.footer .footerDiv { 
+     width: 150px; 
+ }
+ 
+}
+
+
+
+

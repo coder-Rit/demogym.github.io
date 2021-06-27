@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ///////////////////////////////font osm\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <script src="https://use.fontawesome.com/7a48dd6cf0.js"></script>
+
+
+    <!-- ///////////////////////////////animate\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- ///////////////////////////////jquery\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- ///////////////////////////////icon\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <link rel="icon" href="./imges/14.06.2021_12.39.07_REC.png">
+
+
+    <title>image gallery</title>
+    <style>
+        .HomeMainTExt h6 {
+            font-size: 5rem;
+        }
+
+        .HomeMainTExt a {
+
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            position: relative;
+            top: 17vw;
+        }
+
+        body {
+            background-color: rgb(1, 0, 24);
+        }
+
+        .footer {
+            background-color: rgb(1, 0, 24);
+            width: 100vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0;
+            -webkit-box-shadow: 0;
+            -moz-box-shadow: 0;
+
+        }
+
+        .imgesGallery {
+            width: 100vw;
+            height: auto;
+
+
+        }
+
+        .imgesGallery .gallrey1 {
+            display: flex;
+        }
+
+        .imgesGallery .gallrey1 div img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .imgesGallery .gallrey1 div video {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .imgesGallery .gallrey1 .imge1 {
+            width: 50vw;
+            height: 35vw;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .imgesGallery .gallrey1 .imge2 {
+            background-color: rgb(255, 255, 255);
+            width: 29vw;
+            height: 44vw;
+        }
+
+        .imgesGallery .gallrey1 .imge3 {
+            background-color: rgb(255, 255, 255);
+            width: 20vw;
+            height: 44vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgesGallery .gallrey1 .imge3 div {
+            width: 21vw;
+            height: 22vw;
+        }
+
+        .imgesGallery .gallrey1 .imge4 {
+            width: 30vw;
+            height: 45vw;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            bottom: 10vw;
+        }
+
+        .imgesGallery .gallrey1 #sub_imge1_4 {
+            width: 30vw;
+            height: 45vw;
+        }
+
+        .imgesGallery .gallrey1 .imge4 .backgroundVideo {
+            width: 50vw;
+            height: 35vw;
+            position: relative;
+            bottom: 0.5vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imgesGallery .gallrey1 .imge4 video {
+            width: 30vw;
+            height: 10vw;
+            position: relative;
+        }
+
+
+
+
+        .imgesGallery .gallrey1 .imge5 {
+            width: 20vw;
+            height: 55vw;
+            position: relative;
+            bottom: 10vw;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .imgesGallery .gallrey1 .imge5 #imge5 {
+            background-color: white;
+            width: 20vw;
+            height: 20vw;
+        }
+
+
+        .imgesGallery .gallrey1 .imge5 img {
+            width: 20vw;
+            height: 20vw;
+
+        }
+
+        .imgesGallery .gallrey1 .imge5 .video {
+            width: 20vw;
+            height: 35vw;
+            position: relative;
+            transform: translateY(-0.5vw);
+        }
+
+        .imgesGallery .gallrey1 .imge6 {
+            width: 50vw;
+            height: 70vw;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            bottom: 2vw;
+
+
+        }
+
+        .imgesGallery .gallrey1 .imge6 .video {
+            width: 50vw;
+            height: 30vw;
+            position: relative;
+
+
+        }
+
+        .imgesGallery .gallrey1 .imge6 .sub-imge6 {
+            width: 50vw;
+            height: 40vw;
+            display: flex;
+            position: relative;
+            bottom: 1.8vw;
+
+
+        }
+
+        .imgesGallery .gallrey1 .imge6 .divimg1 {
+            width: 25vw;
+            height: 40vw;
+            background-color: white;
+
+        }
+
+        .imgesGallery .gallrey1 .imge6 .divimg1 img {
+            width: 25vw;
+            height: 40vw;
+        }
+
+        .imgesGallery .gallrey1 .imge6 .sub-imge6 video {
+            width: 25vw;
+            height: 40vw;
+            transform: scaleX(1.1);
+        }
+
+        .imgesGallery .gallrey1 .imge6 .images div {
+            width: 30vw;
+            height: 40vw;
+        }
+
+        .imgesGallery .gallrey2 {
+            width: 50vw;
+            height: 24vw;
+            position: relative;
+            bottom: 25.8vw;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+
+        }
+        .imgesGallery .gallrey2 #imge7 {
+            width: 25vw;
+            height: 24vw;
+        }
+        .imgesGallery .gallrey2 div img {
+            width: 25vw;
+            height: 24vw;
+        }
+
+
+
+        @media screen and (max-width:990px) {
+            .footer .footerDivs {
+                margin: 0 3%;
+                padding-bottom: 100px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="DivHomeImg imgGal">
+        <div class="DivHome">
+            <nav>
+
+                <img class="log" src="./imges/14.06.2021_12.39.07_REC.png" alt="">
+                <ul class="maxul" id="minul">
+                    <i class="fa fa-times" id="cross" aria-hidden="true"></i>
+                    <a href="index.html">Home</a>
+                    <a href="Imagegallery.html">Gallry</a>
+                    <a href="index.html">Classe</a>
+                    <a href="index.html">Training</a>
+                    <a href="index.html">About</a>
+                    <a href="index.html">Location</a>
+                    <a href="index.html">Contact</a>
+
+                </ul>
+                <a class="menu" id="menu">Menu</a>
+                <div class="i">
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="50"
+                    data-aos-duration="70"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="100"
+                    data-aos-duration="70"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="150"
+                    data-aos-duration="70"> <i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i> </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="200"
+                    data-aos-duration="70"> <i class="fa fa-google-plus-square"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"data-aos="zoom-in-down"data-aos-delay="250"
+                    data-aos-duration="70"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+
+                </div>
+
+            </nav>
+            <div class="HomeMainTExt">
+                <h6>Wellcome To<span class="orengSpan"> Motivation</span><span class="orengSpan"> Images</span><span
+                        class="orengSpan"> Gallery</span> </h6>
+                <p>Regular physical activity can improve your muscle strength and boost your endurance. Exercise
+                    delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more
+                    efficiently. And when your heart and lung health improve, you have more energy to tackle daily
+                    chores.</p>
+                    <div class="MainBtns" data-aos="zoom-in-up" data-aos-delay="50"
+                    data-aos-duration="600"data-aos-offset="50">
+                        <a class="MainBtn1 ">Book Class</a>
+                        <a class="MainBtn2 ">Hire Coach</a>
+                    </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="imgesGallery">
+        <div class="gallrey1">
+            <div class="imge1" id="imge1">
+
+            </div>
+            <div class="imge2" id="imge2">
+
+            </div>
+
+            <div class="imge3">
+                <div id="sub_imge1_3">
+
+                </div>
+                <div id="sub_imge2_3">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gallrey1">
+            <div class="imge4">
+                <div id="sub_imge1_4">
+                </div>
+                <div class="backgroundVideo">
+                    <video src="./imges/production ID_4859447 (online-video-cutter.com) (1) (1).mp4" autoplay loop
+                        muted></video>
+                </div>
+
+            </div>
+            <div class="imge5">
+                <div id="imge5">
+
+                </div>
+                <div class="video">
+                    <video src="./imges/pexels-annushka-ahuja-7986148.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+            <div class="imge6">
+                <div class="video">
+                    <video src="./imges/production ID_4761426 (1).mp4" autoplay loop muted></video>
+
+                </div>
+                <div class="sub-imge6">
+                    <div class="divimg1" id="imge6">
+
+                    </div>
+                    <video src="./imges/pexels-tima-miroshnichenko-5752496 (1) (1).mp4" autoplay loop muted></video>
+                </div>
+
+            </div>
+        </div>
+        <div class="gallrey2">
+            <div id="imge7">
+
+            </div>
+            <div id="imge8">
+             </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="videos">
+
+        <div class="only800">
+
+
+            <div class="VideoDiv">
+                <video class="diiv divv1 animated bounceInLeft" autoplay loop muted>
+                    <source src="./imges/production ID_4812848.mp4" type="video/mp4">
+
+                </video>
+                <video class="diiv2 animated bounceInRight" autoplay loop muted>
+                    <source src="./imges/Gym - 20422.mp4" type="video/mp4">
+                </video>
+                <div class="motiv1 motiv">
+                    <h1>Action is the foundational key to all <br> success. </h1>
+                    <br>
+                    <h4>- Pablo Picasso</h4>
+                </div>
+                <div class="motiv2 motiv">
+                    <h1>Whether you think you can,<br class="only300"> or you think <br> you can’t, you’re right. </h1>
+                    <br>
+                    <h4> - Henry Ford</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer footerForGallye">
+        <div class="footerDivs">
+
+            <div class="footerDiv">
+                <a href="">Home</a>
+                <a href="">Gallery</a>
+                <a href="">Classes</a>
+                <div>
+                    <a href="">zomba</a>
+                    <a href="">workout</a>
+                    <a href="">yoga</a>
+                    <a href="">sports</a>
+                </div>
+
+            </div>
+            <div class="footerDiv">
+                <a href="">Training </a>
+                <div>
+                    <a href="">cardiovascular training</a>
+                    <a href="">Fartlek training</a>
+                    <a href="">Weight training</a>
+                    <a href="">Plyometric training</a>
+                    <a href="">Flexibility training</a>
+                    <a href="">Circuit training</a>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <a href="">Location</a>
+                <div>
+                    <a>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit <br> Laborum quam minima non. </a>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <a href="">About</a>
+                <div>
+                    <a href="">-Charlie Smith</a>
+                    <a href="">-Jacob Jones</a>
+                    <a href="">-Henry Taylor</a>
+                </div>
+            </div>
+            <div class="footerDiv footerDivLast">
+                <img class="logo" src="./imges/14.06.2021_12.39.07_REC.png" alt="">
+
+                <a href="">Our social media handes</a>
+                <div class="iLast">
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-twitter-square"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"> <i class="fa fa-vimeo-square"
+                            aria-hidden="true"></i> </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"> <i class="fa fa-google-plus-square"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/IconFitnesszone/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <p></p>
+    </section>
+
+
+    <script src="appImages.js"></script>
+</body>
+
+</html>
