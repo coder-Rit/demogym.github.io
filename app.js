@@ -43,9 +43,8 @@ function timing() {
 timing();
  
  
-const InputDiv = document.getElementById("InputDiv") 
-InputDiv.addEventListener('click',function () { 
-
+ 
+function contactfloter() {
   const name = document.getElementById("name")
   name.style.animation="fordiv 1s 1 0.2s"  
 setTimeout(() => {
@@ -72,7 +71,19 @@ setTimeout(() => {
   setTimeout(() => {
     radio.style.zIndex="2" 
   }, 1000);
+}
 
+
+const InputDiv = document.getElementById("InputDiv") 
+const aboutImg = document.getElementById("aboutImg") 
+
+ 
+InputDiv.addEventListener('click',function () { 
+  contactfloter();
+
+})
+aboutImg.addEventListener('click',function () { 
+  contactfloter(); 
 })
     
 
