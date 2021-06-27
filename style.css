@@ -1209,12 +1209,14 @@ font-size: 1.3rem;
 }
 
 .Conatact .submit {
-    font-size: 2rem;
-    padding: 7px 10px;
+    font-size: 1.5rem;
+    padding: 6px 18px;
     background-color: rgb(235, 22, 3);
     border-radius: 20px;
     cursor: pointer;
     color: white;
+    outline: none;
+    border: none;
 }
 .Conatact .SubmitDiv {
    display: flex;
