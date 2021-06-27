@@ -365,6 +365,8 @@ nav .fa:hover {
     box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);  
+    
+    
 }
 
 .TimeDiv1 {
@@ -432,7 +434,9 @@ font-size: 1.3rem;
     box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   
     
 }
@@ -463,7 +467,7 @@ font-size: 1.3rem;
      
 }
 .class .frontFace a   {
-    padding: 7px 17px; 
+    padding: 7px 12px; 
     background-color: rgb(235, 22, 3);
     border-radius: 20px;
     position: absolute; 
