@@ -410,6 +410,7 @@ font-size: 1.3rem;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    row-gap: 15px;
      
      
 
@@ -435,6 +436,7 @@ font-size: 1.3rem;
     -webkit-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   
@@ -472,8 +474,7 @@ font-size: 1.3rem;
     border-radius: 20px;
     position: absolute; 
     color: white;     
-    bottom: 10px;
-    left: 100px;  
+    bottom: 10px; 
     font-size: 1.3rem;
     text-decoration: none; 
 } 
@@ -628,12 +629,12 @@ font-size: 1.3rem;
 
 
 .indiTRaining .trainerDiv1 h1 {
-    font-size: 24px;
+   font-size: 2.2rem;
     text-transform: uppercase;
 }
 
 .indiTRaining .trainerDiv1 h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
     margin: 0 2%;
     position: relative;
     bottom: 20px;
@@ -641,8 +642,8 @@ font-size: 1.3rem;
 
 .indiTRaining .trainerDiv1 a {
     position: relative;
-    bottom: 10px;
-    font-size: 150%;
+    bottom: 10px; 
+   font-size: 1.5rem;
     box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
     -webkit-box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
     -moz-box-shadow: 1px -1px 26px -13px rgba(0,0,0,1);
@@ -670,85 +671,22 @@ font-size: 1.3rem;
     -moz-box-shadow: 1px -1px 31px -13px rgba(0,0,0,1);
     
 }
+ 
 
-@media screen and (max-width:1210px) {
-    .indiTRaining .trainerDiv1 a {
-        font-size: 110%;
-    }
-}
+ 
 
-@media screen and (max-width:1075px) {
-    .indiTRaining .trainerDiv1 h1 {
-        font-size: 20px;
-    }
-
-    .indiTRaining .trainerDiv1 h3 {
-        font-size: 13px;
-    }
-
-}
-
-@media screen and (max-width:873px) {
-    .indiTRaining .trainerDiv1 a {
-        font-size: 1.8rem;
-    }
-
-    .indiTRaining .trainerDiv1 h1 {
-        font-size: 4rem;
-    }
-
-    .indiTRaining .trainerDiv1 h3 {
-        font-size: 2rem;
-    }
-
-}
-
-@media screen and (max-width:505px) and (min-width:477px) {
-    .indiTRaining .trainerDiv1 a {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .indiTRaining .trainerDiv1 h3 {
-        font-size: 2.5rem;
-    }
-    .trainerDiv1 a{
-        padding: 3px 4px;
-         
-    }
-
-}
-
-@media screen and (max-width:379px) {
-    .indiTRaining .trainerDiv1 a {
-        font-size: 1.2rem;
-    }
-
-}
-.svgImage{
-    width: 100vw;
-    height: 900px;
-     position: absolute;
-     opacity: 0.5;
-     transform: translateY(-50px);
-}
-.traning_heading{
-    font-size: 5rem;
-    text-align: left;
-    margin: 0 3%;
-}
+ 
  
 .traning_heading .heading_sapn2{
     color: rgb(235, 22, 3);
 }
 @media screen and (max-width:528px){
-    .indiTRaining {
-        height: 700px; 
+      .indiTRaining {
+        height: 500px; 
     }
     
 .traners_div { 
-    height: 400px; 
+    height: 200px; 
 }
 }
 
@@ -1235,9 +1173,9 @@ font-size: 1.3rem;
         grid-template-columns: 350px auto;
     }
 
-    .contactImg img {
-        width: 900px;
-    height: 650px;
+   .contactImg img {
+        width: 850px;
+    height: 620px;
     
     }
 
@@ -1254,9 +1192,9 @@ font-size: 1.3rem;
         grid-template-columns: 250px auto;
     }
 
-    .contactImg img {
-        width: 700px;
-    height: 500px;
+      .contactImg img {
+        width: 650px;
+    height: 480px;
     }
 
 }
@@ -1267,9 +1205,9 @@ font-size: 1.3rem;
         grid-template-columns: 150px auto;
     }
 
-    .contactImg img {
-        width: 500px;
-    height: 350px;
+   .contactImg img {
+        width: 400px;
+    height: 305px;
     }
 
     .Conatact .InputDiv {
