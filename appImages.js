@@ -22,7 +22,7 @@ function images() {
     let imge1 = document.getElementById("imge1");
  
     setTimeout(() => {
-        imge1.innerHTML = `<img src="./imges/victor-freitas-WvDYdXDzkhs-unsplash.jpg" alt="">`
+        imge1.innerHTML = `<img src="./imges/victor-freitas-WvDYdXDzkhs-unsplash-min.jpg" alt="">`
      }, 0);
 
     setTimeout(() => {
