@@ -552,7 +552,7 @@ font-size: 1.3rem;
     width: 100vw;
     height: auto;
     display: flex;
-
+ 
 
 }
 
@@ -672,10 +672,19 @@ font-size: 1.3rem;
     
 }
  
-
- 
-
- 
+.svgImage{
+    width: 100vw;
+    height: 900px;
+     position: absolute;
+     opacity: 0.5;
+     transform: translateY(-50px);
+}
+.traning_heading{
+    font-size: 5rem;
+    text-align: left;
+    margin: 0 3%;
+}
+  
  
 .traning_heading .heading_sapn2{
     color: rgb(235, 22, 3);
@@ -1219,6 +1228,7 @@ font-size: 1.3rem;
         width: 40vw;
         text-align: center;
         color: orangered;
+        font-size: 1rem;
     }
 
     .Conatact .InputDiv .redio span {
