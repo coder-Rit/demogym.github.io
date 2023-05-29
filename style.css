@@ -1063,11 +1063,15 @@ font-size: 1.3rem;
    .map div{
      width: 93vw; 
    } 
-   /* ///////////////////////////////////contact section/////////////////////////////////// */
+   /* ///////////////////////////////////
+
+
+section/////////////////////////////////// */
 
    .Conatact {
-    display: flex;
+    display: none;
     justify-content: center;
+    
     align-items: center;
     width: 100vw;
     height: 700px;
