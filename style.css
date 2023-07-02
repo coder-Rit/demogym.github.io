@@ -1069,7 +1069,7 @@ font-size: 1.3rem;
 section/////////////////////////////////// */
 
    .Conatact {
-    display: none;
+    display: flex;
     justify-content: center;
     
     align-items: center;
